@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Citas</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="../images/MU.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/citas.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="./servicios.html">Servicios</a></li>
+      <li><a href="./productos.html">Productos</a></li>
+      <li><a href="./contactame.html">Contacto</a></li>
+      <li><a href="./citas.html">Agendar Cita</a></li>
+      <li><a href="./iniciosesion.html">Inicio de sesion</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Registro de citas</h1>
+  </header>
+  
+  <main>
+    <form>
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora">
+
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="tipo">Tipo de maquillaje:</label>
+      <select id="tipo" name="tipo">
+        <option>Maquillaje de día</option>
+        <option>Maquillaje de noche</option>
+        <option>Maquillaje para eventos especiales</option>
+        <option>Maquillaje artístico</option>
+      </select>
+
+      <label for="confirmacion">correo o numero de contacto:</label>
+      <input type="text" id="confirmacion" name="confirmacion">
+
+    </form>
+    <button class="btn btn-primary" onclick="guardarcita()">Registrar cita</button>
+  </main>
+  <footer>
+    <p>Derechos Reservados &copy; Makeup Studio 2023</p>
+  </footer>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+<script src="../js/configuracion.js"></script>
+<script src="../js/guardar.js"></script>
+
+</html>

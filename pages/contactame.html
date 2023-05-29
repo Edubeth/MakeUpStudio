@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contacto</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="../images/MU.ico">
+  <link rel="stylesheet" type="text/css" href="../styles/contacto.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="./servicios.html">Servicios</a></li>
+      <li><a href="./productos.html">Productos</a></li>
+      <li><a href="./contactame.html">Contacto</a></li>
+      <li><a href="./citas.html">Agendar Cita</a></li>
+      <li><a href="./iniciosesion.html">Inicio de sesion</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Contáctanos</h1>
+  </header>
+
+  <main>
+    <h2>Envíanos un mensaje</h2>
+    <form action="https://formsubmit.co/ale041500@gmail.com" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre"><br>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="email" id="correo" name="correo"><br>
+
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono"><br>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje"></textarea><br>
+
+      <button type="submit">Enviar</button>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/pages/contactame.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </main>
+
+  <footer>
+    <p>Derechos Reservados &copy; Makeup Studio 2023</p>
+  </footer>
+</body>
+
+</html>
